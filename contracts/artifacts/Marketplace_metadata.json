@@ -123,6 +123,25 @@
 				"type": "function"
 			},
 			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_itemId",
+						"type": "uint256"
+					}
+				],
+				"name": "getTotalPrice",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			},
+			{
 				"inputs": [],
 				"name": "itemCount",
 				"outputs": [
@@ -178,6 +197,42 @@
 				],
 				"stateMutability": "view",
 				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "contract IERC721",
+						"name": "_nft",
+						"type": "address"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_tokenId",
+						"type": "uint256"
+					},
+					{
+						"internalType": "uint256",
+						"name": "_price",
+						"type": "uint256"
+					}
+				],
+				"name": "makeItem",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [
+					{
+						"internalType": "uint256",
+						"name": "_itemId",
+						"type": "uint256"
+					}
+				],
+				"name": "putchaseItem",
+				"outputs": [],
+				"stateMutability": "payable",
+				"type": "function"
 			}
 		],
 		"devdoc": {
@@ -232,11 +287,11 @@
 			]
 		},
 		"contracts/Marketplace.sol": {
-			"keccak256": "0x9df212e1cb7e860f1d0efc675d91c08e324b62929eb4530112ac3c0c2c682cfe",
+			"keccak256": "0x5f2d9ee9c6c70e0b48501e2fdfb624ceb501f135386f177542c1f3d881f312d6",
 			"license": "MIT",
 			"urls": [
-				"bzz-raw://7531590ba01058f2b77e5bee6d3ff097e6e7d6cea0002c1123143b2bc3b1d898",
-				"dweb:/ipfs/QmSoMF6zzm2bumbG187T1MK9tRoQqCKPbHDUfaNrKvFJCC"
+				"bzz-raw://a7bbc8d64734c62b1daac5092a9d87e53a04b0d4a6f6f999f08d177522384764",
+				"dweb:/ipfs/QmNjfQqfwWPfQfDW7GtX5rL6Ps3eezFx7Tkhraw5WbLAn4"
 			]
 		}
 	},
